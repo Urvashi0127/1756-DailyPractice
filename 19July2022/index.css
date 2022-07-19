@@ -1,0 +1,12 @@
+body{
+    background:linear-gradient(180deg , rgb(212, 138, 81) , rgb(232, 93, 18));
+    text-align:center;
+}
+
+#line1{
+    color:white;
+}
+
+.line{
+    color : pink;
+}
