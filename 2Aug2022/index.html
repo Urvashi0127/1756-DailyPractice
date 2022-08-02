@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnClick(){
+            // alert("Hi , How are you ?");
+            // document.getElementById("pi").innerHTML ="Hello";
+            // var n1 = document.getElementById("n1").value;
+            // var n2 = document.getElementById("n2").value;
+            // if(!isNaN(n1) && !isNaN(n2)){
+            //     n1 = Number(n1);
+            //     n2 = Number(n2);
+            //     document.getElementById("pi").innerHTML =n1+n2;
+            // }else{
+            //     document.getElementById("pi").innerHTML ="<span style='color:red'>Please enter Number</span>";
+            // }
+
+            var n1 = document.getElementById("n1").value;
+            
+            if(n1%2==0){
+                document.getElementById("pi").innerHTML ="EVEN NUMBER";
+            }else{
+                document.getElementById("pi").innerHTML ="ODD NUMBER";
+            }
+
+
+        } 
+    </script>
+    
+</head>
+<body>
+    N1 <input type="text" name="n1" id="n1"><br>
+    <!-- N2 <input type="text" name="n2" id="n2"><br> -->
+    <button onclick="fnClick()">Click</button>
+    <p id = "pi" ></p>
+    
+</body>
+</html>
