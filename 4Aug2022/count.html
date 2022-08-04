@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn(){
+            let l1 = document.getElementById("l").value;
+            let r1 = document.getElementById("r").value;
+            let k1 = document.getElementById("k").value;
+           
+            if(l1>r1 || r1<k1){
+                alert("Wrong value ! ")
+            }else{
+                var cnt =0;
+                for(var i = l1; i <= r1; i++){
+                    if(i%k1==0){
+                        cnt+=1;
+                    }
+                }
+            }
+
+            document.getElementById("s").innerHTML=cnt;
+
+
+        
+        }
+    </script>
+</head>
+<body>
+    l : <input type="text" name="l" id="l"><br>
+    r : <input type="text" name="r" id="r"><br>
+    k : <input type="text" name="k" id="k"><br>
+    <button type="submit" onclick="fn()">Calculate</button>
+    
+    <h3 id = "s"></h3>
+</body>
+</html>
