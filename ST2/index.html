@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script>
+        function fn(){
+            var n = document.getElementById("num").value;
+            var sum=0;
+            var len = n.toString().length;
+            if(n=="" || n==" " || n==null){
+                alert("Please enter valid Number");
+            } else if(len<5 || len>5){
+                alert("Please enter number of length 5");
+            }else{
+                while(!isNaN(n) && n){
+                    sum+=(n%10);
+                    n = Math.floor(n/10);
+                }
+                var rad = sum/5;
+                const element = document.getElementById("shape");
+                // element.style.marginTop="20px";
+                // element.style.marginLeft="600px";
+                element.style.height=sum+"px";
+                element.style.width=sum+"px";
+                element.style.borderRadius = rad+"px";
+
+            }      
+        }
+
+        
+
+    </script>
+</head>
+<body>
+
+    <div class="main">
+        <h1 class="head">Enter a Number to create a Square Shape</h1>
+        <input type="text"  id="num">
+        <br>
+        <button type="submit" onclick="fn()" id="submit">Calculate Square Shape</button>
+        
+        <div id="shape"></div>
+    </div>
+    
+</body>
+</html>

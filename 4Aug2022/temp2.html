@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id ="oddNo"></pre>
+    <script>
+        function isOdd(number){
+            return number%2!=0;
+        }
+        function filter(number,fn){
+            let res=[];
+
+            for(const n of number){
+                if(fn(n)){
+                    res.push(n);
+                }
+            }
+            return res;    
+        }
+        let numbers = [1,2,3,4,5,6,7,8,9];
+        let oddN = filter(numbers,isOdd);  // isOdd IS CALLBACK FUNCTION
+        document.getElementById("oddNo").innerHTML=oddN;
+    </script>
+</body>
+</html>
