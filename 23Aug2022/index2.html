@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="n1" id="n1" placeholder="Enter a Number" />
+    <button onclick="fn()">Submit</button>
+    <p id="pi"></p>
+    <p id="demo"></p>
+
+    <script>
+      function check(a) {
+        if (!isNaN(a)) {
+          a = Number(a);
+
+          if (a < 18) {
+            throw "Its too low";
+          }
+          if (a > 60) {
+            throw "Its too high";
+          }
+        } else {
+          throw "its not number";
+        }
+      }
+      function fn() {
+        var a = document.getElementById("n1").value;
+
+        try {
+          check(a);
+        } catch (err) {
+          document.getElementById("pi").innerHTML = err;
+        }
+      }
+    </script>
+  </body>
+</html>
