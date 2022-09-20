@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Weight</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+  </head>
+
+  <body>
+    <section class="wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="title">
+        <span>Welcome to Our Solar System</span>
+        <br />
+        <span>Check your Weight on Different Planet</span>
+      </div>
+
+      <input
+        type="number"
+        name="weight"
+        id="weight"
+        placeholder="Enter your Weight"
+      />
+
+      <button type="submit" name="cal" onclick="fn()">Calculate</button>
+
+      <table cellpadding="30px">
+        <tr>
+          <td>
+            <img src="Planets\mercury.gif" width="500" height="500" />
+          </td>
+          <td>
+            <span>Mercury </span>
+            <br />
+            <p color="white" id="p1" class="info"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Venus</span><br />
+            <p color="white" id="p2" class="info"></p>
+          </td>
+          <td><img src="Planets\Venus.gif" width="560" height="500" /></td>
+        </tr>
+        <tr>
+          <td><img src="Planets\earth.gif" width="500" height="500" /></td>
+          <td>
+            <span>Earth</span><br />
+            <p color="white" id="p3" class="info"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Mars</span><br />
+            <p color="white" id="p4" class="info"></p>
+          </td>
+          <td><img src="Planets\Mars.gif" width="500" height="500" /></td>
+        </tr>
+        <tr>
+          <td><img src="Planets\Jupiter.gif" width="500" height="500" /></td>
+          <td>
+            <span>Jupiter</span><br />
+            <p color="white" id="p5" class="info"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Saturn</span><br />
+            <p color="white" id="p6" class="info"></p>
+          </td>
+          <td><img src="Planets\saturn.gif" width="500" height="500" /></td>
+        </tr>
+        <tr>
+          <td><img src="Planets\Uranus.gif" width="500" height="500" /></td>
+          <td>
+            <span>Uranus</span><br />
+            <p color="white" id="p7" class="info"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>Neptune</span><br />
+            <p color="white" id="p8" class="info"></p>
+          </td>
+          <td><img src="Planets\Neptune.gif" width="500" height="500" /></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
