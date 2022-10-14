@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    margin: 0;
+    /* background-image: url('https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg'); */
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.py-4 {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    height: 500px;
+    width: 500px;
+    border: 1px solid rgb(87, 83, 76);
+    background-color: rgba(90, 155, 179, 0.6);
+    box-shadow: 10px 10px #c2bebe;
+    ;
+    color: white;
+    border-radius: 12px;
+    margin-top: 100px;
+    /* margin-left: 16rem; */
+
+}
+
+.map {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+    position: absolute;
+    justify-content: center;
+    margin-left: 70rem;
+    /* margin-bottom: 1700rem; */
+    top: 18.5%;
+    margin-top: 40px;
+
+
+}
