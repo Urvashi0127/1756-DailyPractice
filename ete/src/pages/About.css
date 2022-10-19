@@ -1,0 +1,11 @@
+.abt{
+    display:flex;
+    flex-direction: row;
+}
+
+.lead{
+    margin-top: 50px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}

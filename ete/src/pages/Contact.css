@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
+body{
+    margin: 0;
+    background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);    
+    
+}
+.py-4{
+    display:flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap:1rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    height: 32rem;
+    width:30rem;
+    border: 1px solid rgb(87, 83, 76);
+    background-color: rgba(84, 106, 119, 0.4);
+    color:white;
+    /* border-radius: 12px; */
+    margin-top: 77px;
+    margin-left: 8rem;
+    
+}
+
+
+.cont
+{
+    margin-left:290px;
+    padding-top: 20px;
+    margin-top: 50px;
+    height: 700px;
+    width: 1300px;
+    background:url("https://media.istockphoto.com/photos/-picture-id1311934969?b=1&k=20&m=1311934969&s=170667a&w=0&h=UQ3F8CE5zam5mT5swIliZ9nO7dhX4ZzsALMufFdv6Ys=");
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.map{
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center; */
+    position:absolute;
+    justify-content: center;
+    margin-left: 59rem;
+    /* margin-bottom: 1700rem; */
+    top: 29%;
+    
+    
+}
+
+::-webkit-scrollbar {
+    display:none;
+  }
